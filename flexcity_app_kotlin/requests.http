@@ -1,0 +1,61 @@
+### POST activation
+POST http://localhost:8080/activation
+Content-Type: application/json
+
+{
+    "date": "2026-02-16",
+    "volume": 6
+}
+
+
+### PUT activation
+PUT http://localhost:8080/assets
+Content-Type: application/json
+
+[
+  {
+    "code": "asset_a",
+    "name": "",
+    "activationCost": 1.2,
+    "availability": [
+      "2026-02-16"
+    ],
+    "volume": 2
+  },
+  {
+    "code": "asset_b",
+    "name": "",
+    "activationCost": 2.1,
+    "availability": [
+      "2026-02-16"
+    ],
+    "volume": 6
+  },
+  {
+    "code": "asset_c",
+    "name": "",
+    "activationCost": 0.5,
+    "availability": [
+      "2026-02-16"
+    ],
+    "volume": 2
+  },
+  {
+    "code": "asset_d",
+    "name": "",
+    "activationCost": 1.5,
+    "availability": [
+      "2026-02-16"
+    ],
+    "volume": 4
+  },
+  {
+    "code": "asset_e",
+    "name": "",
+    "activationCost": 3.1,
+    "availability": [
+      "2026-02-16"
+    ],
+    "volume": 8
+  }
+]
